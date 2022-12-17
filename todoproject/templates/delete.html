@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="col-md-6">
+    <form method="POST" style="margin-top:40px; margin-left:50px; border-radius: 20px;" class="p-3 shadow" >
+        {% csrf_token %}
+        <p style="color:slategray">Are you sure this task is done ?</p>
+        <button type="submit" style=" border-radius: 10px; padding:5px;" class="btn btn-danger">confirm</button>
+    </form>
+</div>
+
+{% endblock %}
